@@ -53,9 +53,10 @@
 }
 
 body {
-    background-color: #E9EFEC;
-    background-image: url("assets/circle.svg");
+    background-image: url('assets/bgbody.svg');
     background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
@@ -67,6 +68,12 @@ h1, h3, h5  {
 p {
     font-family: "Poppins", sans-serif;
 }
+
+.qq {
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+} 
 
 .tfix {
     margin-bottom: -1em;
@@ -85,21 +92,21 @@ p {
 
 /* gallery */
 .gallery {
-    background-image: url('assets/blob-gallery.svg');
+    background-image: url('assets/blobgallery.svg');
     background-size: auto 100%;
     background-position: center;
 }
 
 /* menu */
 .menu {
-    background-image: url('assets/blob-menu.svg');
+    background-image: url('assets/blobmenu.svg');
     background-size: cover;
     background-position: center;
 }
 
 /* order */
 .order {
-    background-image: url('assets/blob-order.svg');
+    background-image: url('assets/bloborder.svg');
     background-size: auto 100%;
     background-position: center;
 }
@@ -129,3 +136,72 @@ p {
   from{border-right-color: rgba(255,255,255,.75);}
   to{border-right-color: transparent;}
 }
+
+@media (max-width: 640px) {
+  .img-food {
+    min-width: 2rem;
+    max-width: 3rem;
+  }
+    .ico {
+    padding-bottom: 1rem ;
+  }
+}
+
+@media (min-width: 641px) {
+  .img-food {
+    
+    max-width:8rem;
+  }
+
+}
+
+/* TESTI */
+
+/* carousel */
+#quote-carousel {
+    padding: 0 10px 30px 10px;
+    margin-top: 30px;
+    text-align:center;
+  }
+  /* indicator position */
+  #quote-carousel .carousel-indicators {
+    right: 50%;
+    top: auto;
+    bottom: -10px;
+    margin-right: -19px;
+      color:#60dfe5;
+  }
+  /* indicator color */
+  #quote-carousel .carousel-indicators li {
+    background: #333333;
+      height:4px;
+    width:50px;
+  }
+  /* active indicator */
+  #quote-carousel .carousel-indicators .active {
+    background: #60dfe5;
+    height:4x;
+    width:50px;
+    margin-bottom:1px;
+  }
+
+  /* button wa */
+  .floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    width: 60px;
+    height: 60px;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+  }
+  .floating-btn:hover {
+    background-color: #128C7E; /* Darker WhatsApp green */
+    color: white;
+  }
